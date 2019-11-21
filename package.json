@@ -1,6 +1,7 @@
 {
   "name": "req-url",
   "version": "1.0.0",
+  "description": "Easily grab full URL from a request (http.IncomingMessage) object",
   "license": "MIT",
   "author": "Pooya Parsa <pooya@pi0.ir>",
   "files": [

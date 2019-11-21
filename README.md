@@ -28,7 +28,7 @@ Default export signuture is:
 reqURL(request?: http.IncomingMessage): String
 ```
 
-Example: Get fh
+Example:
 
 ```js
 const url = getURL(req)
