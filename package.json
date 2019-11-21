@@ -1,0 +1,28 @@
+{
+  "name": "req-url",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Pooya Parsa <pooya@pi0.ir>",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "build": "bili --minify --format esm --format cjs --bundle-node-modules --no-map -t browser",
+    "dev": "yarn build && node test/server.js",
+    "lint": "eslint .",
+    "release": "yarn build && yarn test && standard-version && npm publish && git push --follow-tags",
+    "test": "yarn lint"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@nuxtjs/eslint-config": "^1.1.2",
+    "bili": "^4.8.1",
+    "eslint": "^6.6.0",
+    "is-https": "^1.0.0",
+    "standard-version": "^7.0.1"
+  }
+}
