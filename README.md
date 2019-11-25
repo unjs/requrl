@@ -1,4 +1,4 @@
-# req-url
+# urlful
 
 Easily grab full URL from a request ([http.IncomingMessage](https://nodejs.org/api/http.html#http_class_http_incomingmessage)) object.
 
@@ -13,19 +13,19 @@ Easily grab full URL from a request ([http.IncomingMessage](https://nodejs.org/a
 ESM import:
 
 ```js
-import reqURL from 'req-url'
+import getURL from 'urlful'
 ```
 
 CommonJS import:
 
 ```js
-const reqURL = require('req-url')
+const getURL = require('urlful')
 ```
 
 Default export signuture is:
 
 ```ts
-reqURL(request?: http.IncomingMessage): String
+getURL(request?: http.IncomingMessage): String
 ```
 
 Example:

@@ -1,5 +1,5 @@
 {
-  "name": "req-url",
+  "name": "urlful",
   "version": "1.0.0",
   "description": "Easily grab full URL from a request (http.IncomingMessage) object",
   "license": "MIT",
