@@ -12,7 +12,7 @@
   "types": "./dist/urlful.d.ts",
   "scripts": {
     "build": "bili --minify --format esm --format cjs --bundle-node-modules --no-map -t browser ./urlful.ts",
-    "dev": "yarn build && node test/server.js",
+    "dev": "ts-node ./demo.ts",
     "lint": "eslint .",
     "release": "yarn build && yarn test && standard-version && npm publish && git push --follow-tags",
     "test": "yarn lint"
@@ -26,6 +26,7 @@
     "is-https": "^1.0.0",
     "rollup-plugin-typescript2": "^0.25.2",
     "standard-version": "^7.0.1",
+    "ts-node": "^8.5.2",
     "typescript": "^3.7.2"
   }
 }

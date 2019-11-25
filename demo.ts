@@ -1,8 +1,8 @@
-const { Server } = require('http')
-const reqUrl = require('..')
+import { Server } from 'http'
+import gerURL from '.'
 
 const server = new Server((req, res) => {
-  res.end(reqUrl(req))
+  res.end(gerURL(req))
 })
 
 server.listen(3000, () => {
