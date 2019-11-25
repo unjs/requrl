@@ -9,7 +9,9 @@ export default function getURL (req: IncomingMessage) : string {
   if (!req) {
     return _location.href
   }
-  return encodeURI('http' + (isHTTPS(req) ? 's' : '') + '://' +
+  return encodeURI(
+    ('http' + (isHTTPS(req) ? 's' : '') + '://') +
     (req.headers['x-forwarded-host'] || req.headers.host) +
-    req.url)
+    req.url
+  )
 }
