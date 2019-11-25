@@ -13,7 +13,7 @@
   "scripts": {
     "build": "bili --minify --format esm --format cjs --bundle-node-modules --no-map -t browser ./urlful.ts",
     "dev": "ts-node ./demo.ts",
-    "lint": "eslint .",
+    "lint": "eslint . --ext ts",
     "release": "yarn build && yarn test && standard-version && npm publish && git push --follow-tags",
     "test": "yarn lint"
   },
@@ -21,6 +21,7 @@
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
     "@nuxtjs/eslint-config": "^1.1.2",
+    "@nuxtjs/eslint-config-typescript": "^0.1.3",
     "bili": "^4.8.1",
     "eslint": "^6.6.0",
     "is-https": "^1.0.0",
