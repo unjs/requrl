@@ -5,7 +5,7 @@ const _location = typeof location !== 'undefined' ? location : {
   href: undefined
 }
 
-export default function getURL (req: IncomingMessage) : string {
+export default function getURL (req?: IncomingMessage) : string {
   if (!req) {
     return _location.href
   }
