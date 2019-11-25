@@ -9,8 +9,9 @@
   ],
   "main": "dist/urlful.js",
   "module": "dist/urlful.esm.js",
+  "types": "./dist/urlful.d.ts",
   "scripts": {
-    "build": "bili --minify --format esm --format cjs --bundle-node-modules --no-map -t browser ./urlful.js",
+    "build": "bili --minify --format esm --format cjs --bundle-node-modules --no-map -t browser ./urlful.ts",
     "dev": "yarn build && node test/server.js",
     "lint": "eslint .",
     "release": "yarn build && yarn test && standard-version && npm publish && git push --follow-tags",
@@ -23,6 +24,8 @@
     "bili": "^4.8.1",
     "eslint": "^6.6.0",
     "is-https": "^1.0.0",
-    "standard-version": "^7.0.1"
+    "rollup-plugin-typescript2": "^0.25.2",
+    "standard-version": "^7.0.1",
+    "typescript": "^3.7.2"
   }
 }
