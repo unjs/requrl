@@ -1,5 +1,8 @@
 # urlful
 
+[![npm](https://flat.badgen.net/npm/v/urlful)](https://www.npmjs.com/package/urlful)
+[![dt](https://flat.badgen.net/npm/dt/urlful)](https://www.npmjs.com/package/urlful)
+
 Easily grab full URL from a request ([http.IncomingMessage](https://nodejs.org/api/http.html#http_class_http_incomingmessage)) object.
 
 ## Features
