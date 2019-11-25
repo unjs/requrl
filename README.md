@@ -10,6 +10,8 @@ Easily grab full URL from a request ([http.IncomingMessage](https://nodejs.org/a
 
 - Universal (browser and node.js) support
 - Detect HTTPS requests using [is-https](https://github.com/nuxt-community/is-https)
+- Support `x-forwarded-proto` and `x-forwarded-host`
+- Always encode URI
 - Super Small
 
 ## Usage
