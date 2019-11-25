@@ -31,7 +31,7 @@ const getURL = require('urlful')
 Default export signuture is:
 
 ```ts
-getURL(request?: http.IncomingMessage): String
+getURL (request?: http.IncomingMessage) : string
 ```
 
 Example:
