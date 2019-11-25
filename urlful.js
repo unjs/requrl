@@ -2,7 +2,7 @@ import isHTTPS from 'is-https'
 
 const _location = typeof location !== 'undefined' ? location : {}
 
-export default function reqURL (req) {
+export default function getURL (req) {
   if (!req) {
     return _location.href
   }
