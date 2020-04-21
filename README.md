@@ -1,37 +1,31 @@
-# urlful
+# requrl
 
-[![npm](https://flat.badgen.net/npm/v/urlful)](https://www.npmjs.com/package/urlful)
-[![dt](https://flat.badgen.net/npm/dt/urlful)](https://www.npmjs.com/package/urlful)
-[![bundlephobia](https://flat.badgen.net/bundlephobia/minzip/urlful)](https://bundlephobia.com/result?p=urlful)
+[![npm](https://flat.badgen.net/npm/v/requrl)](https://www.npmjs.com/package/requrl)
+[![dt](https://flat.badgen.net/npm/dt/requrl)](https://www.npmjs.com/package/requrl)
+[![bundlephobia](https://flat.badgen.net/bundlephobia/minzip/requrl)](https://bundlephobia.com/result?p=requrl)
 
-Easily grab full URL from a request ([http.IncomingMessage](https://nodejs.org/api/http.html#http_class_http_incomingmessage)) object.
+Grab full URL from [request](https://nodejs.org/api/http.html#http_class_http_incomingmessage).
 
 ## Features
 
 - Universal (browser and node.js) support
-- Detect HTTPS requests using [is-https](https://github.com/nuxt-community/is-https)
+- Detect HTTPS requests using [is-https](https://github.com/nuxt-contrib/is-https)
 - Support `x-forwarded-proto` and `x-forwarded-host`
 - Always encode URI
 - Super Small
 
 ## Usage
 
-ESM import:
-
 ```js
-import getURL from 'urlful'
+import getURL from 'requrl'
+// OR
+const getURL = require('requrl')
 ```
 
-CommonJS import:
-
-```js
-const getURL = require('urlful')
-```
-
-Default export signuture is:
+Function signuture is:
 
 ```ts
-getURL (request?: http.IncomingMessage) : string
+function getURL(req?: IncomingMessage): string
 ```
 
 Example:
