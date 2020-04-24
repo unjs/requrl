@@ -2,12 +2,12 @@ import { IncomingMessage } from 'http'
 import isHTTPS from 'is-https'
 
 const _location = typeof location !== 'undefined' ? location : {
-  href: undefined
+  origin: undefined
 }
 
 export default function getURL (req?: IncomingMessage) : string {
   if (!req) {
-    return _location.href
+    return _location.origin
   }
   return encodeURI(
     ('http' + (isHTTPS(req) ? 's' : '') + '://') +
