@@ -6,9 +6,10 @@
   "license": "MIT",
   "author": "Pooya Parsa <pooya@pi0.ir>",
   "main": "dist/requrl.js",
-  "types": "./types",
+  "types": "types/requrl.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "scripts": {
     "build": "rollup -c && yarn tsc --emitDeclarationOnly",
