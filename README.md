@@ -25,15 +25,15 @@ const getURL = require('requrl')
 Function signuture is:
 
 ```ts
-function getURL(req?: IncomingMessage): string
+function getURL(req?: IncomingMessage, includePath?: boolean): string
 ```
 
 Example:
 
 ```js
 const url = getURL(req)
-// http://localhost:3000/aaf/dfdf
-// https://www.foo.com/foo/bar
+// http://localhost:3000
+// https://www.foo.com
 ```
 
 ## License

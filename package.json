@@ -4,14 +4,13 @@
   "description": "Grab full URL from request",
   "repository": "nuxt-contrib/requrl",
   "license": "MIT",
-  "author": "Pooya Parsa <pooya@pi0.ir>",
   "main": "dist/requrl.js",
-  "types": "./types",
+  "types": "dist/requrl.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c && yarn tsc --emitDeclarationOnly",
+    "build": "siroc build",
     "dev": "ts-node ./demo.ts",
     "lint": "eslint . --ext ts",
     "prepublish": "yarn build",
@@ -19,20 +18,12 @@
     "test": "yarn lint"
   },
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/preset-env": "latest",
-    "@babel/preset-typescript": "^7.9.0",
-    "@nuxtjs/eslint-config": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
     "eslint": "latest",
     "is-https": "latest",
-    "rollup": "^2.6.1",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-typescript2": "latest",
+    "siroc": "latest",
     "standard-version": "latest",
     "ts-node": "latest",
-    "typescript": "^3.8.3"
+    "typescript": "latest"
   }
 }

@@ -3,16 +3,11 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
-    "importHelpers": false,
-    "noEmitHelpers": true,
-    "strict": false,
+    "strict": true,
     "esModuleInterop": true,
-    "outDir": "dist",
-    "declaration": true,
-    "declarationDir": "types",
     "types": [
       "node"
-    ],
+    ]
   },
   "include": [
     "src"
