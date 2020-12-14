@@ -1,10 +1,7 @@
 import { IncomingMessage } from 'http'
 import isHTTPS from 'is-https'
 
-const _location = typeof location !== 'undefined' ? location : {
-  origin: '',
-  pathname: '/'
-}
+const _location = typeof location !== 'undefined' ? location : { origin: '', pathname: '/' }
 
 export default function getURL (req?: IncomingMessage, includePath?: boolean) : string {
   if (!req) {
