@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](https://github.com/nuxt-contrib/requrl/compare/v3.0.1...v3.0.2) (2020-12-18)
+
+
+### Bug Fixes
+
+* **pkg:** sideEffects should be boolean ([6e65419](https://github.com/nuxt-contrib/requrl/commit/6e6541921c9c6c8d812b56a008cca86a6c72c41f))
+
 ### [3.0.1](https://github.com/nuxt-contrib/requrl/compare/v3.0.0...v3.0.1) (2020-12-18)
 
 ## [3.0.0](https://github.com/nuxt-contrib/requrl/compare/v2.0.1...v3.0.0) (2020-12-14)
