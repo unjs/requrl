@@ -4,7 +4,7 @@
   "description": "Grab full URL from request",
   "repository": "nuxt-contrib/requrl",
   "license": "MIT",
-  "sideEffects": "false",
+  "sideEffects": false,
   "main": "dist/requrl.js",
   "module": "dist/requrl.mjs",
   "types": "dist/requrl.d.ts",
