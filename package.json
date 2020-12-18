@@ -1,6 +1,6 @@
 {
   "name": "requrl",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Grab full URL from request",
   "repository": "nuxt-contrib/requrl",
   "license": "MIT",
